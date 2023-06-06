@@ -1,0 +1,69 @@
+my Doc = https://docs.google.com/document/d/1RerFpWuvunBiUGKtNs1mdTiNKWA306fx1TpX5ZxEviU/edit
+
+Answer Q 1 :
+
+From the sample data the correlation coefficient of 0.7 indicates that the there is 70% strong positive relationship between SAT scores and college GPA. 
+It means that as the SAT scores of students increase, their college GPAs tend to increase as well.
+This is with respect to the observation from sample data but we cant conclude for whole population. To conclude we will need to take few more samples and then can be conclued on the basis of the average value we observed.
+Even though if we had the same observation we can not conclude that the studen with high SAT score will tend to score heigher GPA score. We should be considering other factors like student study duaration & pattern, routine, collage teachings etc. 
+
+=======================================================================================================================================================================================================================
+
+Answer Q 2 :
+
+# Given
+sample_mean = 170
+std_val = 10
+sample_size = 1000
+skewness = 0 
+
+Answer a:
+zsocre_160 = (160-sample_mean)/std_val
+zsocre_180 = (180-sample_mean)/std_val
+print("z score for 160: ", zsocre_160)
+print("z score for 180: ", zsocre_180)
+# getting values from z table
+print("The Z SCORE FOR 160 is 0.1587 i.e 15.87%")
+print("The Z SCORE FOR 180 0.8413 i.e 84.13%")
+
+print("Percentage of data under range 160-180 is : ", round(84.13-15.87, 3) , "%"  )
+
+output - Percentage of data under range 160-180 is :  68.26 %
+
+=======================================================================================================================================================================================================================
+Answer Q 3 :
+
+
+=======================================================================================================================================================================================================================
+Answer Q 4 :
+
+The total number of possible outcomes is 20 since there are 20 slips of paper in the hat.
+Out of these 20 numbers, there are four perfect squares i.e 1, 4, 9, and 16.
+Therefore, the probability for perfect square will be :
+=> 4 / 20 = 1 / 5 = 0.2
+So the probability that the number on the slip of paper is a perfect square is 20%.
+
+=======================================================================================================================================================================================================================
+
+Answer Q 10 :
+
+Answer a:
+#given
+n = 500
+k = 20
+p = 0.05
+
+# Using binomial formula =  nCk * p^k * (1-p)^(n-k)
+import math
+nCk = math.comb(n, k)
+prob = (p ** k) * ((1 - p) ** (n - k))
+result = nCk * prob
+
+print("The probability that exactly 20 bulbs are defective is : ",result*100 ,"%")
+output - The probability that exactly 20 bulbs are defective is :  5.161 %
+=======================================================================================================================================================================================================================
+
+
+
+
+
